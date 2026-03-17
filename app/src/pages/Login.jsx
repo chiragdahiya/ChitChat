@@ -77,10 +77,10 @@ const Login = () => {
    <div className='flex flex-col gap-2'>
   {currState === "Sign Up" ? (
     <p className='text-sm text-gray-600'>Already have an account? <span
-    onClick={()=>{setCurrState("Login");isDataSubmitted=(false)} } className='font-md cursor-pointer text-violet-500'>Login here</span></p>
+    onClick={()=>{setCurrState("Login");setIsDataSubmitted(false)} } className='font-md cursor-pointer text-violet-500'>Login here</span></p>
   ) : (
     <p className='text-sm text-gray-600'>Create an account <span 
-    onClick={()=>{setCurrState("Sign Up"); isDataSubmitted=(false)}}
+    onClick={()=>{setCurrState("Sign Up"); setIsDataSubmitted(false)}}
     className='font-md cursor-pointer text-violet-500'>Click Here</span></p>
   )}
    </div>
